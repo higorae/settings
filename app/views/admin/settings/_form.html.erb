@@ -1,0 +1,14 @@
+<%= semantic_form_for settings,builder: ActiveAdmin::FormBuilder, :method => :post, url: admin_settings_create_path do |f| %>
+	<% f.inputs 'Info' do %>
+		<% f.input :page_title %>
+		<% f.input :page_description %>
+	<% end %>
+	<% f.inputs 'Attributos dinâmicos' do %>
+		<% f.has_many :dynamic_settings, allow_destroy: true, heading: false, new_record: true do |ds| %>
+				<% ds.input :name %>
+				<% ds.input :value %>
+		<% end %>
+	<% end %>
+	<% f.input :id, as: :hidden %>
+	<%= f.actions %>
+<% end %>
