@@ -1,0 +1,4 @@
+settings
+========
+
+Activeadmin Dynamic settings
