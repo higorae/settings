@@ -11,7 +11,7 @@ You can add it to your Gemfile with:
 gem 'settings', gitgub: 'higorae'
 ```
 
-Run rails generate command to install it  migrations  copy:
+Run rails generate command to copy migrations files:
 ```console
 rails generate settings:install:migrations
 ```
