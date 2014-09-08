@@ -16,7 +16,7 @@ Run rails generate command to install copy it migrations.
 rails generate settings:install:migrations
 ```
 
-After you run it:
+Then run:
 
 ```console
 rake db:migrate
