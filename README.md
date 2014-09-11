@@ -8,7 +8,7 @@ Activeadmin Dynamic settings
 You can add it to your Gemfile with:
 
 ```ruby
-gem 'settings', gitgub: 'higorae'
+gem 'settings', github: 'higorae'
 ```
 
 Run rails generate command to copy migrations files:
